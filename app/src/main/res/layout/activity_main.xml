@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="warron.phpprojectandroid.MainActivity">
+
+    <include layout="@layout/widget_tool_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tool_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_common_list"
+                style="@style/HomeButton"
+                android:text="最基本的下拉刷新和上拉加载列表" />
+
+            <Button
+                android:id="@+id/btn_empty_list"
+                style="@style/HomeButton"
+                android:text="空列表显示空页面（可设置显示或隐藏header）" />
+
+            <Button
+                android:id="@+id/btn_footer_list"
+                style="@style/HomeButton"
+                android:text="无上拉加载但包含footer的列表" />
+
+            <Button
+                android:id="@+id/btn_grid_list"
+                style="@style/HomeButton"
+                android:text="下拉刷新和上拉加载的grid列表" />
+
+            <Button
+                android:id="@+id/btn_Upload_image"
+                style="@style/HomeButton"
+                android:text="上传图片" />
+
+            <ImageView
+                android:id="@+id/imageViewT"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

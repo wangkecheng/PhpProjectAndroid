@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pic_denglu"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_logo_001" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/phoneTit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="账号"
+
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/phoneTexView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/phoneTit"
+                android:background="@null"
+                android:hint="请输入电话号码"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/phoneTit"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/phoneTexView"
+                android:background="@color/white"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/passTit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="密码"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+
+                android:id="@+id/passTexView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/passTit"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="24"
+
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/isShowPassBtn"
+                android:layout_width="24dp"
+                android:layout_height="15dp"
+                android:layout_alignRight="@+id/passTexView"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/b_ic_yanjingb"
+                android:onClick="isShowPassBtnClick" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/passTit"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/passTexView"
+                android:background="@color/white"
+                android:text=""></TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/SysThemeColor"
+            android:onClick="loginBtnClick"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/forgetPassBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/loginBtn"
+            android:layout_below="@+id/loginBtn"
+            android:layout_marginTop="25dp"
+            android:background="@color/ClearColor"
+            android:onClick="forgetBtnClick"
+            android:text="忘记密码？"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignRight="@+id/loginBtn"
+            android:layout_alignTop="@+id/forgetPassBtn"
+            android:layout_marginLeft="30dp"
+            android:background="@color/ClearColor"
+            android:onClick="registerBtnClick"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/ic_qq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="qqBtnClick"
+                    android:text="QQ登录"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/ic_weixing"
+                    android:onClick="weChatBtnClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信登录"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ClearColor"
+            android:onClick="protocolBtnClick"
+            android:text="登录已代表您阅读且同意服务条款"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>
